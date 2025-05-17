@@ -60,16 +60,16 @@ Source Convergence Issues
 Diagnosing Convergence with Shannon Entropy
 -------------------------------------------
 
-As discussed earlier, it is necessary to converge both :math:`k_{eff}` and the
+As discussed earlier, it is necessary to converge both :math:`k_\text{eff}` and the
 source distribution before any tallies can begin. Moreover, the convergence rate
-of the source distribution is in general slower than that of :math:`k_{eff}`.
-One should thus examine not only the convergence of :math:`k_{eff}` but also the
+of the source distribution is in general slower than that of :math:`k_\text{eff}`.
+One should thus examine not only the convergence of :math:`k_\text{eff}` but also the
 convergence of the source distribution in order to make decisions on when to
 start active batches.
 
 However, the representation of the source distribution makes it a bit more
-difficult to analyze its convergence. Since :math:`k_{eff}` is a scalar
-quantity, it is easy to simply look at a line plot of :math:`k_{eff}` versus the
+difficult to analyze its convergence. Since :math:`k_\text{eff}` is a scalar
+quantity, it is easy to simply look at a line plot of :math:`k_\text{eff}` versus the
 number of batches and this should give the user some idea about whether it has
 converged. On the other hand, the source distribution at any given batch is a
 finite set of coordinates in Euclidean space. In order to analyze the
@@ -106,7 +106,7 @@ entropy versus the number of batches.
 
 In recent years, researchers have started looking at ways of automatically
 assessing source convergence to relieve the burden on the user of having to look
-at plots of :math:`k_{eff}` and the Shannon entropy. A number of methods have
+at plots of :math:`k_\text{eff}` and the Shannon entropy. A number of methods have
 been proposed (see e.g. [Romano]_, [Ueki]_), but each of these is not without
 problems.
 

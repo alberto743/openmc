@@ -71,7 +71,7 @@ specific energy group :math:`g` in cell :math:`(l,m,n)`:
     g}\overline{\overline\phi}_{l,m,n}^h\Delta_l^u\Delta_m^v\Delta_n^w
     \right\rangle
     +
-    \frac{1}{k_{eff}}\sum\limits_{h=1}^G
+    \frac{1}{k_\text{eff}}\sum\limits_{h=1}^G
     \left\langle\overline{\overline{\nu_f\Sigma}}_{f_{l,m,n}}^{h\rightarrow
     g}\overline{\overline\phi}_{l,m,n}^h
     \Delta_l^u\Delta_m^v\Delta_n^w\right\rangle.
@@ -95,7 +95,7 @@ In eq. :eq:`eq_neut_bal` the parameters are defined as:
   rate also includes the energy transfer of reactions (except fission) that
   produce multiple neutrons such as (n, 2n); hence, the need for :math:`\nu_s`
   to represent neutron multiplicity.
-* :math:`k_{eff}` --- core multiplication factor.
+* :math:`k_\text{eff}` --- core multiplication factor.
 * :math:`\left\langle\overline{\overline{\nu_f\Sigma}}_{f_{l,m,n}}^{h\rightarrow
   g}\overline{\overline\phi}_{l,m,n}^h\Delta_l^u\Delta_m^v\Delta_n^w\right\rangle`
   --- volume-integrated fission production rate of neutrons from fissions in

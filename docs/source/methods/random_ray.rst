@@ -103,7 +103,7 @@ terms on the right hand side.
     \begin{aligned}
     \mathbf{\Omega} \cdot \mathbf{\nabla} \psi(\mathbf{r},\mathbf{\Omega},E) & + \Sigma_t(\mathbf{r},E) \psi(\mathbf{r},\mathbf{\Omega},E) = \\
     & \int_0^\infty d E^\prime \int_{4\pi} d \Omega^{\prime} \Sigma_s(\mathbf{r},\mathbf{\Omega}^\prime \rightarrow \mathbf{\Omega}, E^\prime \rightarrow E) \psi(\mathbf{r},\mathbf{\Omega}^\prime, E^\prime) \\
-    & + \frac{\chi(\mathbf{r}, E)}{4\pi k_{eff}} \int_0^\infty dE^\prime \nu \Sigma_f(\mathbf{r},E^\prime) \int_{4\pi}d \Omega^\prime \psi(\mathbf{r},\mathbf{\Omega}^\prime,E^\prime)
+    & + \frac{\chi(\mathbf{r}, E)}{4\pi k_\text{eff}} \int_0^\infty dE^\prime \nu \Sigma_f(\mathbf{r},E^\prime) \int_{4\pi}d \Omega^\prime \psi(\mathbf{r},\mathbf{\Omega}^\prime,E^\prime)
     \end{aligned}
 
 In Equation :eq:`transport`, :math:`\psi` is the angular neutron flux. This
@@ -136,7 +136,7 @@ energy spectrum for neutrons born from fission, :math:`\chi`, represents a known
 distribution of outgoing neutron energies based on the material that fissioned,
 which is taken as input data to a computation. The average number of neutrons
 born per fission is :math:`\nu`. The eigenvalue of the equation,
-:math:`k_{eff}`, represents the effective neutron multiplication factor. If the
+:math:`k_\text{eff}`, represents the effective neutron multiplication factor. If the
 right hand side of Equation :eq:`transport` is condensed into a single term,
 represented by the total neutron source term :math:`Q(\mathbf{r}, \mathbf{\Omega},E)`,
 the form given in Equation :eq:`transport_simple` is reached.
@@ -954,7 +954,7 @@ defined by the definition of the source:
 .. math::
     :label: source_moments
 
-    q_{v, i, g}= \frac{\chi_{i,g}}{k_{eff}} \sum_{g^{\prime}=1}^{G} \nu
+    q_{v, i, g}= \frac{\chi_{i,g}}{k_\text{eff}} \sum_{g^{\prime}=1}^{G} \nu
     \Sigma_{\mathrm{f},i, g^{\prime}} \hat{\phi}_{v, i, g^{\prime}} + \sum_{g^{\prime}=1}^{G}
     \Sigma_{\mathrm{s}, i, g^{\prime}\rightarrow g} \hat{\phi}_{v, i, g^{\prime}}\quad \forall v \in(x, y, z)\;\mathrm{,}
 
@@ -1007,7 +1007,7 @@ completes the set of equations for LS.
 Shannon Entropy in Random Ray
 -----------------------------
 
-As :math:`k_{eff}` is updated at each generation, the fission source at each FSR
+As :math:`k_\text{eff}` is updated at each generation, the fission source at each FSR
 is used to compute the Shannon entropy. This follows the :ref:`same procedure
 for computing Shannon entropy in continuous-energy or multigroup Monte Carlo
 simulations <methods-shannon-entropy>`, except that fission sources at FSRs are
@@ -1103,8 +1103,8 @@ still reported, though we emphasize that the primary use case for adjoint mode
 is for producing adjoint flux tallies to support subsequent perturbation studies
 and weight window generation.
 
-Note that the adjoint :math:`k_{eff}` is statistically the same as the forward
-:math:`k_{eff}`, despite the flux distributions taking different shapes.
+Note that the adjoint :math:`k_\text{eff}` is statistically the same as the forward
+:math:`k_\text{eff}`, despite the flux distributions taking different shapes.
 
 ---------------------------
 Fundamental Sources of Bias

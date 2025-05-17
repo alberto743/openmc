@@ -322,9 +322,9 @@ emitted is
 .. math::
     :label: fission-neutrons
 
-    \nu = \frac{w \nu_t}{k_{eff}}
+    \nu = \frac{w \nu_t}{k_\text{eff}}
 
-where :math:`w` is the statistical weight and :math:`k_{eff}` is the effective
+where :math:`w` is the statistical weight and :math:`k_\text{eff}` is the effective
 multiplication factor from the previous generation. The number of neutrons
 produced is biased in this manner so that the expected number of fission
 neutrons produced is the number of source particles that we started with in the

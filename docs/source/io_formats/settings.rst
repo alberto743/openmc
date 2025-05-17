@@ -206,7 +206,7 @@ immediately. This element is ignored for all run modes other than "eigenvalue".
 
 The ``<keff_trigger>`` element (ignored for all run modes other than
 "eigenvalue".) specifies a precision trigger on the combined
-:math:`k_{eff}`. The trigger is a convergence criterion on the uncertainty of
+:math:`k_\text{eff}`. The trigger is a convergence criterion on the uncertainty of
 the estimated eigenvalue. It has the following attributes/sub-elements:
 
   :type:
@@ -226,7 +226,7 @@ the estimated eigenvalue. It has the following attributes/sub-elements:
 
   :threshold:
     The precision trigger's convergence criterion for the
-    combined :math:`k_{eff}`.
+    combined :math:`k_\text{eff}`.
 
     *Default*: None
 
@@ -1218,7 +1218,7 @@ number, and particle number, respectively.
 -------------------------
 
 OpenMC includes tally precision triggers which allow the user to define
-uncertainty thresholds on :math:`k_{eff}` in the ``<keff_trigger>`` subelement
+uncertainty thresholds on :math:`k_\text{eff}` in the ``<keff_trigger>`` subelement
 of ``settings.xml``, and/or tallies in ``tallies.xml``. When using triggers,
 OpenMC will run until it completes as many batches as defined by ``<batches>``.
 At this point, the uncertainties on all tallied values are computed and compared

@@ -318,7 +318,7 @@ of neutrons born from fission per unit phase-space volume at :math:`\mathbf{r}`,
 :math:`F( \mathbf{r}' \rightarrow \mathbf{r})` is the expected number of
 neutrons born from fission per unit phase space volume at :math:`\mathbf{r}`
 caused by a neutron at :math:`\mathbf{r}`, and :math:`k` is the eigenvalue. The
-fundamental eigenvalue of equation :eq:`NTE` is known as :math:`k_{eff}`, but
+fundamental eigenvalue of equation :eq:`NTE` is known as :math:`k_\text{eff}`, but
 for simplicity we will simply refer to it as :math:`k`.
 
 In a Monte Carlo criticality simulation, the power iteration method is applied
